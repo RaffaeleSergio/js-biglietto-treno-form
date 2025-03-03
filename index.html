@@ -12,7 +12,7 @@
 <body class="container p-3 mb-2 bg-danger ">
     <main>
         <div>
-            <h1 class="text-white ">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <h1 class="text-white mb-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
             <div class="bg-white">
                 <div class="d-flex justify-content-around">
                     <div class="m-2">
@@ -23,16 +23,20 @@
                         <label for="km" class="m-2 form-label fw-bold">KM da percorrere</label>
                         <input type="text" id="km" class="form-control">
                     </div>
-                    <div class="m-2">
-                        <label for="eta" class="m-2 form-label fw-bold">Fascia d'età</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1">Maggiorenne</option>
-                            <option value="2">Minorenne</option>
-                        </select>
-                    </div>
+                        <div class="m-2">
+                            <label for="eta" class="m-2 form-label fw-bold">Fascia d'età</label>
+                            <select class="form-select" aria-label="Default select example" id="eta">
+                                <option value="1">Maggiorenne</option>
+                                <option value="2">Minorenne</option>
+                            </select>
+                        </div>
                     <div>
                     </div>
 
+                </div>
+                <div class="d-flex justify-content-center p-3">
+                    <button class="btn btn-secondary me-3" id="bottone">Genera</button>
+                    <button class="btn btn-secondary">Annula</button>
                 </div>
             </div>
 
