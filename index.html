@@ -9,38 +9,63 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body class="container p-3 mb-2 bg-danger ">
+<body class="p-3 mb-2 bg-danger ">
     <main>
-        <div>
-            <h1 class="text-white mb-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-            <div class="bg-white">
-                <div class="d-flex justify-content-around">
-                    <div class="m-2">
-                        <label for="name" class="form-label fw-bold m-2">Nome Cognome</label>
-                        <input type="text" id="name" class="form-control">
-                    </div>
-                    <div class="m-2">
-                        <label for="km" class="m-2 form-label fw-bold">KM da percorrere</label>
-                        <input type="text" id="km" class="form-control">
-                    </div>
-                        <div class="m-2">
-                            <label for="eta" class="m-2 form-label fw-bold">Fascia d'età</label>
-                            <select class="form-select" aria-label="Default select example" id="eta">
-                                <option value="1">Maggiorenne</option>
-                                <option value="2">Minorenne</option>
-                            </select>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <section class="col-12">
                     <div>
-                    </div>
+                        <form action="" id="treno-form">
+                            <h1 class="text-white mb-3 text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                            <div class="bg-white">
+                                <div class="d-flex justify-content-around">
+                                    <div class="m-2">
+                                        <label for="name" class="form-label fw-bold m-2">Nome Cognome</label>
+                                        <input type="text" id="name" class="form-control">
+                                    </div>
+                                    <div class="m-2">
+                                        <label for="km" class="m-2 form-label fw-bold">KM da percorrere</label>
+                                        <input type="number" id="km" class="form-control">
+                                    </div>
+                                    <div class="m-2">
+                                        <label for="eta" class="m-2 form-label fw-bold">Fascia d'età</label>
+                                        <select class="form-select" aria-label="Default select example" id="eta">
+                                            <option value="Minorenne">Minorenne</option>
+                                            <option value="Over">Over</option>
+                                            <option value="Maggiorenne">Maggiorenne</option>
+                                            
+                                        </select>
+                                    </div>
+                                    <div>
+                                    </div>
 
-                </div>
-                <div class="d-flex justify-content-center p-3">
-                    <button class="btn btn-secondary me-3" id="bottone">Genera</button>
-                    <button class="btn btn-secondary">Annula</button>
-                </div>
+                                </div>
+                                <div class="d-flex justify-content-center p-3">
+                                    <button class="btn btn-secondary me-3" type="submit">Genera</button>
+                                    <button class="btn btn-secondary" type="reset">Annula</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </div>
 
-        </div>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-4">
+                    <section>
+                        <div class="card">
+                            <h5 class="card-header">Biglietto treno</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Nome passeggero</h5>
+                                <p class="card-text">Fascia d'età</p>
+                                <p id="prezzo">Prezzo</p>
+                                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
     </main>
     <script src="./js/script.js"></script>
